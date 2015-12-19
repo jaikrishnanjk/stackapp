@@ -1,0 +1,63 @@
+.main-header
+{
+
+	height: 100px;
+    background-color:#F6F6F6;
+	/* height:1000px */
+}
+#userImgHead
+{
+border: 2px solid #fff;
+    border-radius: 21px;
+
+}
+.homepage_header
+{
+margin-top: 100px;
+}
+.body
+{
+	 background-color:#E7E7E7;
+	 /* overflow-x:hidden; */
+}
+.button1 {
+    display: block;
+    background: #27adf1;
+    color: white;
+    border: none;
+    padding: .5em 1em;
+    width: 100%;
+}
+.main {
+    padding: 2em 0;
+	margin-top:20%;
+}
+
+.button-panel
+{    
+    display: table;
+    margin: 0 auto;
+}
+
+.button2 {
+    margin-top: .25em;
+    display: block;
+    border: 1px solid #27adf1;
+    color: #27adf1;
+    background: white;
+    padding: .5em 1em;
+    width: 100%;
+}
+.eachList
+{
+	padding:10px;
+	margin:5px;
+	width:100%;
+	
+}
+.eachList1
+{
+	overflow-x:hidden;
+	width:100%;
+	
+}

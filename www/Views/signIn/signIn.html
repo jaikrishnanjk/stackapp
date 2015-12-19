@@ -1,0 +1,36 @@
+<div class="container">
+
+<div class="page-header1  " style="margin-top:150px;"><h2>SIGN IN TO <BR>YOUR ACCOUNT</h2></div>
+       
+		
+            <!-- PAGE HEADER -->
+            
+		<div class="signInForm eachList" >
+            <!-- FORM : YOU CAN DISABLE, HTML5 VALIDATION BY USING "novalidate" ATTRIBUTE-->
+            <form name="userForm" ng-submit="submitForm()" novalidate>
+
+              
+
+                <!-- EMAIL -->
+                <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && (userForm.email.$dirty || submitted)}">
+                    <input type="email" name="email" class="form-control" ng-model="user.email" placeholder="Your Email Address" ng-required="true">
+                    <p ng-show="userForm.email.$error.required && (userForm.email.$dirty || submitted)" class="help-block">Email is required.</p>
+                    <p ng-show="userForm.email.$error.email && (userForm.email.$dirty || submitted)" class="help-block">Enter a valid email.</p>
+                </div>
+
+				 <!-- PASSWORD -->
+                <div class="form-group" ng-class="{ 'has-error' : userForm.password.$invalid && (userForm.password.$dirty || submitted)}">
+                    <input type="Password" name="password" class="form-control" ng-model="user.password" placeholder="Your Password" ng-required="true">
+                    <p ng-show="userForm.password.$error.required && (userForm.password.$dirty || submitted)" class="help-block">Your password is required.</p>
+                </div>
+
+                <!-- CONFIRM PASSWORD -->
+               
+
+                <button type="submit" class="btn btn-primary form-control">Log In</button>
+				<div style="margin-top:5px;"><a href="" ><p style="color:pink;display:inline;margin-top:5px;">Forgot Password</p></a><p style="color:white;display:inline;"> or</p><a href="#/signUp"><p style="color:pink;display:inline;"> Don't Have an Account?</p></a></div>
+            </form>
+        </div>
+        
+	 </div>
+ 
